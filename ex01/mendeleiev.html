@@ -4,6 +4,18 @@
 <meta charset="UTF-8"></meta>
 <meta name="viewport" content="width=device-width">
 <style>
+p
+{
+font: roboto;
+font-style: bold;
+font-size: 0.7vw
+}
+h3
+{
+font: roboto;
+text-align: center;
+display: float;
+}
 table.tab1
 {
 border-style:none;
@@ -64,23 +76,17 @@ border-bottom-style:none;
 border-top-style:none;
 border-left-style:none;
 }
-div#detailed
+.flex
 {
-background-color:#99ee99;
-display:block;
-margin-left:15%;
-
-border-style:solid;
-border-width:2px;
+display: inline-block
 }
 .a_weight_t
 {
-margin-right: 2px;
 text-align: right;
 }
 .num_t
 {
-margin-right: 2px;
+width: 30%;
 text-align: left;
 }
 </style>
@@ -91,17 +97,19 @@ text-align: left;
     <center>
         <div>
         <table border="1" style="border-style:none;" cellspacing="0" cellpadding="10" width="70%">
-        <tr>
-            <td id="H" class="type3">
-                <div>
-                    <p class=a_weight_t>1.008</p>
-                    <p>H</p>
-                    <p class=num_t>1</p>
-                </div>
-            </td>
-            <td colspan="16" class="stype1"></td>
-            <td id="He" class="type6">He</td>
-            </tr>
+		<tr>
+        	<td id="H" class="type3">
+            	<p class=a_weight_t>1.008</p>
+            	<h3>H</h3>
+            	<p class=num_t>1</p>
+        	</td>
+        	<td colspan="16" class="stype1"></td>
+			<td id="He" class="type6">
+					<p class=a_weight_t>4.0026</p>
+					<h3>He</h3>
+					<p class=num_t>1</p>
+			</td>
+        </tr>
         <tr>
         <td id="Li" class="type4">Li</td>
         <td id="Be" class="type5">Be</td>
