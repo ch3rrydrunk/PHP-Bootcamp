@@ -3,66 +3,214 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
+	height: 90%;
 	font-size: 16px;
-	display: block;
+	background-color: rgb(80,80,80);
 }
+
+p {
+	font-size: 0.8vw;
+	margin:0;
+	font-family: Verdana;
+	margin-block: 0;
+}
+
 div {
-	background-color: rgb(144,144,144);
-	margin: 20 auto;
-}
-div.header {
-	display: block;
-	width: 80%;
-	height: 180px;
-	position: relative;
-	margin: 0 auto;
-	border-radius: 10px 10px;
-	top: 20px;
-	box-shadow: 10px 10px 5px black;
-}
-div.sidebar {
-	display: block;
-	width: 17.5%;
-	box-shadow: 10px 10px 5px black;
-}
-
-div.main {
-	float: middle;
-	width: 50%;
-	box-shadow: 10px 10px 5px black;
-}
-
-.feedback {
-	box-shadow: 10px 10px 5px black;
-}
-
-#leftbar {
-	float: left;
-}
-
-#rightbar {
-	float: right;
-}
-
-#logo {
-    height: 90%;
-    top: 20;
-    bottom: 0;
-    left: 20;
-    right: 0;
 	margin: 0;
-	border-radius: 10px 10px;
+	padding: 0;
+}
+
+.header {
+	height: 20%;
+	margin-bottom: 20px;
+}
+
+.block {
+	border-radius: 10px;
+	background-color: rgb(144, 144, 144);
+	box-shadow: 10px 10px 5px black;
+}
+
+.head {
+	top: 10px;
+	height: 90%;
+	width: 70%;
+	margin:  1vh auto;
+	position: relative;
+}
+
+.buttons {
+	height: 90%;
+	float: right;
+	position: relative;
+}
+
+.middle {
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+
+.main {
+	width: 50%;
+	height: 58vh;
+	margin: 0 auto;
+}
+
+.sidebar {
+	width: 7%;
+	height: 42vh;
+}
+
+.left {
+	float: left;
+	margin-left: 16.2vw;
+	margin-right: 1.8vw;
+}
+
+.right {
+	float: right;
+	margin-right: 16.2vw;
+	margin-left: 1.8vw;
+}
+
+.left_pics {
+	height: inherit;
+	display: block;
+	margin-top: 1vh;
+}
+
+.l_pics {
+	display: block;
+	max-width: 100%;
+	max-height: 7.7vh;
+	margin: auto auto;
+}
+
+.bricks {
+	display: block;
+	background-image : url("resources/brick.jpg");
+	background-repeat: repeat;
+	background-size: 27%;
+	margin: auto 1.5vh;
+}
+
+.brick{
+	display: block;
+	width: 30%;
+	visibility: hidden;
+}
+
+.right_pics {
+	height: 60%;
+	display: block;
+	margin-top: 1vh;
+}
+
+.r_pics {
+	display: block;
+	width: 60%;
+	margin: auto;
+	margin-top: 5%;
+}
+
+.green {
+	background-color: rgb(167, 252, 150);
+	width: 25%;
+	height: 18%;
+	z-index: 3;
+	margin-top: 1%;
+	margin-left: 12%;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	padding: 0.5%;
+	padding-bottom: 2%;
+	position: relative;
+}
+
+.footer {
+	height: 20%;
+}
+
+#doft42 {
+	display: inline-block;
+	border-radius: 10px;
+	height: 90%;
+	margin: 5px;
 }
 
 #reload {
-	height: 20%;
-	position: relative;
-	top: 10%
-	float: right;
-	
+	width: 1.1vw;
+	padding-bottom: 5vmin;
+	margin: 1vh 1vw;
+}
+  
+#close {
+	width: 1.1vw;
+	display: block;
+	margin: 1vh 1vw;
 }
 
-#close {
-	height: 20%;
+#cluster {
+	width: 95%;
+	display: block;
+	margin: 1vh auto;
+	z-index: 2;
+	height: 95%;
+}
+
+#ikea {
+	width:10%;
+	height: 43px;
+	float: right;
+	margin-top: -22%;
+	margin-right: 57%;
 	position: relative;
+}
+
+#apple {
+	width:20%;
+	height: 43px;
+	float: right;
+	margin-top: -22%;
+	margin-right: 0%;
+	position: relative;
+}
+
+#book {
+	width: 3.5vw;
+}
+
+#oeil {
+	margin-top: 0.2vh;
+	border: 3px solid red;
+    border-radius: 4px;
+}
+
+#loupe {
+	width: 20%;
+	z-index: 2;
+	margin-left: 39%;
+	position: absolute;
+}
+
+#caps {
+	font-size: 2vw;
+	font-family: Georgia;
+}
+
+#italic {
+	font-style: italic;
+}
+
+#ordinateur {
+	text-shadow: 6px 6px 5px red;
+}
+
+#form {
+	width: 65%;
+	height: 10%;
+	display: inline-block;
+	margin-top: 1%;
+	font-size: 0.8vw;
 }

@@ -1,28 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 			<link rel="stylesheet" href="day42.css">
-			<meta name="viewport" content="width=device-width">
-	</head>
-
+			<title>Day of the 42</title>
+		</head>
 	<body>
-		<div class=header>
-			<img src="resources/day_of_the_42.png" id=logo>
-			<img src="resources/close.gif" id=close>
-			<img src="resources/reload.png" id=reload>
-		</div>
-		<br>
-		<div class=sidebar id=left>
-			derp
-		</div>
-		<div class=main>
-			derp
-		</div>
-		<div class=sidebar id=right>
-			derp
-		</div>
-		<div id=feedback>
-
-		</div>
-	</body>
-</html>
+			<div class="header">
+				<div class="block head">
+					<img src="resources/day_of_the_42.png" alt="doft42" id="doft42">
+					<div class="buttons">
+						<a href="http://www.disney.com/" target="_blank">
+							<img src="resources/reload.png" alt="reload" id="reload">
+						</a>
+						<a href="https://www.relaischateaux.com/" target="_blank">
+							<img src="resources/close.gif" alt="reload" id="close">
+						</a>
+					</div>
+					<img src="resources/loupe.png" alt="loupe" id="loupe"/>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="block sidebar left">
+					<div class="left_pics">
+						<img src="resources/arrow.png" title="Advance" class="l_pics" id="arrow"/>
+						<img src="resources/main.png" title="Take" class="l_pics" id="main"/>
+						<img src="resources/oeil.png" title="Look" class="l_pics" id="oeil"/>
+						<img src="resources/outil.png" title="Use" class="l_pics" id="outil"/>
+						<img src="resources/chat-icon.png" title="Speak" class="l_pics" id="chat-icon"/>
+					</div>
+				</div>
+				<div class="block main">
+					<img src="resources/cluster.jpg" alt="cluster" id="cluster"/>
+					<a href="http://www.ikea.com/" alt="ikea" id="ikea" target="_blank"></a>
+					<a href="https://www.apple.com/" alt="apple" id="apple" target="_blank"></a>
+				</div>
+				<div class="block sidebar right">
+					<div class="right_pics">
+						<img src="resources/book.png" alt="book" class="r_pics" id="book"/>
+						<img src="resources/towel.png" alt="towel" class="r_pics" id="towel"/>
+						<div class="bricks">
+							<img src="resources/brick.jpg" alt="brick" class="brick"/>
+							<img src="resources/brick.jpg" alt="brick" class="brick"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block green">
+				<p>Vous <span id="caps">entrez</span> alors dans une grande piece remplie d'<span id="ordinateur">ordinateurs</span>...</p>
+				<p id="italic">- Bonjour, vous &ecirc;tes nouveau ici ?</p>
+				<form title="form">
+						<input type="text" id="form">
+						<input type="submit" value="response" id="response">
+				</form>
+			</div>
+			</div>
+			
+			<div id="footer"></div>
+	
+</body></html>
