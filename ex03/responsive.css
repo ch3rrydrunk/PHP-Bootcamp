@@ -1,0 +1,55 @@
+body {
+	background-image: url("https://www.uiw.edu/smse/_imgs/uiw-chemistry-hero.jpg");
+	 background-color: #cccccc;
+	 background-size: 150%;
+}
+#outer-grid {
+	display: grid;
+	grid-template-rows: repeat(9, 1fr);
+	grid-template-columns: repeat(18, 1fr);
+	grid-gap: 1px;
+	width: 100%
+}
+.inner-grid {
+	display: grid;
+	grid-template-areas:
+	"weight"
+	"elem"
+	"num";
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	border: 1px solid black;
+}
+.w {
+	grid-area: weight;
+	text-align: right;
+	font-size: 1vmin;
+	padding-right: 5%;
+}
+.e {
+	text-align: center;
+	grid-area: elem;
+	font-weight: bold;
+	font-size: 2vmin;
+}
+.n {
+	text-align: left;
+	grid-area: num;
+	font-size: 1vmin;
+	padding-left: 5%;
+}
+.s_elems {
+	background-color: rgb(247, 125, 150);
+}
+.p_elems {
+	background-color: rgb(252, 219, 97);
+}
+.d_elems {
+	background-color: rgb(71, 199, 219);
+}
+.f1_elems {
+	background-color: rgb(168, 217, 173);
+}
+.f2_elems {
+	background-color: rgb(125, 191, 135);
+}
