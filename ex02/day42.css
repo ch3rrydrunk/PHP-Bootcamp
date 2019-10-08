@@ -1,0 +1,68 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-size: 16px;
+	display: block;
+}
+div {
+	background-color: rgb(144,144,144);
+	margin: 20 auto;
+}
+div.header {
+	display: block;
+	width: 80%;
+	height: 180px;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 10px 10px;
+	top: 20px;
+	box-shadow: 10px 10px 5px black;
+}
+div.sidebar {
+	display: block;
+	width: 17.5%;
+	box-shadow: 10px 10px 5px black;
+}
+
+div.main {
+	float: middle;
+	width: 50%;
+	box-shadow: 10px 10px 5px black;
+}
+
+.feedback {
+	box-shadow: 10px 10px 5px black;
+}
+
+#leftbar {
+	float: left;
+}
+
+#rightbar {
+	float: right;
+}
+
+#logo {
+    height: 90%;
+    top: 20;
+    bottom: 0;
+    left: 20;
+    right: 0;
+	margin: 0;
+	border-radius: 10px 10px;
+}
+
+#reload {
+	height: 20%;
+	position: relative;
+	top: 10%
+	float: right;
+	
+}
+
+#close {
+	height: 20%;
+	position: relative;
+}
