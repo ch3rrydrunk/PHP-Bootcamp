@@ -1,0 +1,28 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles vertices.
+
+An instance can be constructed from array of x, y, z, w and color constitutives.
+Example: 
+$vrt = new Vertex( array( 'x' => 0, 'y' => 1, 'z' => 0, 'color' => $red   ) );
+
+X, Y, Z and W constitutives are used as is (float) and Color is an object of Color class.
+
+The class provides the following methods for setting and getting respective fields:
+public function getX() : x
+public function getY() : y
+public function getZ() : z
+public function getW() : w
+public function getColor() : color
+
+public function setX( $x ) : sets x 
+public function setY( $y ) : sets y 
+public function setZ( $z ) : sets z 
+public function setW( $w ) : sets w 
+public function setColor( $color ) : sets color
+
+Verbose output for __construct and __destruct methods can be enabled by setting Vertex::verbose to True.
+
+An instance can be printed as String of following format:
+- Verbose-enabled: "Vertex( x:%5s, y:%5s, z:%4s, w:%4.2s, %s )", $this->_x, $this->_y, $this->_z, $this->_w, $this->color);
+- Verbose-disabled: "Vertex( x:%5s, y:%5s, z:%4s, w:%4.2s )", $this->_x, $this->_y, $this->_z, $this->_w);
+---------------------------------------------------------------------- Vertex ->
