@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="lobby.js"></script>
+		<link href="styles.css" rel="stylesheet" type="text/css"/>	
+		<title>Game Lobby</title>
+		<link rel="icon" type="image/gif" href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/rocket-512.png" />
+	</head>
+	<body>
+		<header>
+			<span class="menubutton" >Create Lobby</span>
+			<a href="profile.php"><span class="menubutton" id="profile" >Profile</span></a>
+		</header>
+		<div id = "game_info" hidden="true">
+		<!-- action="modif.php" method="post" name="modif.php" -->
+			<form id = "123">
+				<span class="enter">fleet cost: </span>
+				<input type="text" name="login"> 
+				<span class="enter">Old Password:  </span>
+				<input type="password" name="oldpw" >
+				<span class="enter">New Password: </span>
+				<input type="password" name="newpw" ></br></br>
+				<input id = "ok" type="submit" name="submit" value="OK">
+			</form>
+		</div>
+	</body>
+</html>

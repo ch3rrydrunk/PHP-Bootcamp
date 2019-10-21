@@ -1,0 +1,112 @@
+td
+{
+	background-color: pink;
+	color:white;
+	height: 5px;
+	width: 5px;
+	font-size: 3px;
+	padding: 0px;
+}
+.table1 {
+	margin: auto;
+	height: 100%;
+}
+
+body 
+{
+	font-family: sans-serif;
+	background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center,
+	linear-gradient(to top, rgb(12, 38, 61), rgb(4, 17, 34));
+	margin:0;
+	padding:0;
+}
+
+.enter
+{
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.menubutton{
+	color: white;
+	border: none;
+	text-shadow: 0px 0px 20px black;
+}
+
+#profile{
+	float: right;
+}
+
+.menubutton:hover{
+	color: rgb(175, 55, 55);
+	text-shadow: 0px 0px 3px rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+header{
+	padding: 20px;
+	color: white;
+	font-size: 30px;
+	margin: 0;
+	text-align: left;
+}
+
+form
+{
+	padding: 10px;
+	background-color: rgb(36, 34, 41);
+	box-shadow: 0 0 6px rgb(255, 255, 255);
+	border-radius: 10px;
+}
+#form{
+	margin-top:20vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#form div{
+	width: 330px;
+	height: 160px;
+}
+#ok
+{
+	width: 100%;
+	padding: 3px;
+	background-color: rgb(226, 67, 67);
+	font-size: 22px;
+	border-radius: 0px;
+	color: white;
+	box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+form input
+{
+	width: 100%;
+	border: none;
+	padding: 5px;
+	box-shadow: inset 2px 2px 5px 0 rgb(238, 85, 118);
+	border-radius: 2px;
+}
+a span
+{
+	color: rgb(255, 255, 255);
+}
+a span:hover{
+	color: rgb(194, 79, 79);
+	text-shadow: 0px 0px 5px rgb(0, 0, 0);
+	cursor: pointer;
+}
+a
+{
+	text-decoration: none;
+}
+H1
+{
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	text-shadow: 0 0 3px rgb(167, 20, 20);
+
+}

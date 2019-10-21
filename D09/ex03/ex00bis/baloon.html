@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Baloon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+            .main
+            {
+                margin: 10vw auto;
+                box-align: center;
+            }
+            #baloon
+            {
+                margin: auto auto;
+                width: 200;
+                height: 200;
+                border-radius: 50%;
+                background-color: red;
+            }
+    </style>
+    <script>
+        var colors = ['green', 'blue', 'red'];
+        var cur_c = 2;
+        $(document).ready(function(){
+            $("#baloon").click(function(){
+                let side = parseInt($("#baloon").css("width"));
+                let blow = "" + (side + 10) + "px";
+                cur_c = (cur_c + 1) % 3;
+                console.log(blow);
+                if (side < 415) {
+                    $("#baloon").css({ "width": blow, "height" : blow, "background-color" : colors[cur_c]});
+                }
+                else {
+                    $("#baloon").css({ "width": "200px", "height" : "200px", "background-color" : colors[cur_c]});
+                }
+            });
+            $("#baloon").mouseleave(function(){
+                let side = parseInt($("#baloon").css("width"));
+                let blow = "" + (side - 5) + "px";
+                cur_c = Math.abs(cur_c + 2) % 3;
+                if (side >= 205) {
+                    $("#baloon").css({ "width": blow, "height" : blow, "background-color" : colors[cur_c]});
+                }
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <div class="main">
+            <div id="baloon"></div>
+        </div>
+    </body>
+</html>

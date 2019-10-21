@@ -1,0 +1,53 @@
+.pinfo{
+	font-size: 20px;
+	color: white;
+	margin: 5px;
+	float: right;
+	margin-right: 20px;
+}
+
+body .enter{
+	background-color: rgb(27, 27, 27);
+}
+
+.login{
+	text-align: center;
+
+	margin-left: 20px;
+	color: red;
+}
+
+.rank{
+	text-align: center;
+	
+	margin-left: 20px;
+	color: rgb(140, 221, 116);
+}
+
+.aboutme{
+	text-align: center;
+	color: rgb(115, 163, 236);
+}
+
+.aboutme .pinfo{
+	float: inherit;
+}
+
+.rank .pinfo{
+	float: inherit;
+}
+
+.login .pinfo{
+	float: inherit;
+}
+
+#profinfo{
+	font-size: 30px;
+	color: white;
+}
+
+#save{
+	border:none;
+	height:40px;
+	width:100%;
+}

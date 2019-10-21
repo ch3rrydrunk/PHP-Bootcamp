@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="todo.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background:pink;
+                margin: 10%;
+            }
+            #ft_list {
+                min-height: 40px;
+            }
+            .todo {
+                height: 2vh;
+                margin: auto auto;
+            }
+
+        </style>
+    </head>
+    <body onload="load();">
+        <h1> Your To-do's</h1>
+        <div id="ft_list"></div>
+        <input type="submit" name="New" value="New task" onclick="newtodo();">
+    </body>
+</html>

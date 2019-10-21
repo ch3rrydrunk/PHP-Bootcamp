@@ -3,10 +3,25 @@
         <title>Calc</title>
         <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
         <style>
-                .main
+                *
                 {
-                    margin: 10vw auto;
+                    box-sizing: border-box;
+                    margin: auto auto;
+                }
+                body
+                {
+                    margin: auto auto;
                     box-align: center;
+                }
+                #outer
+                {
+                    margin: auto auto;
+                    position: relative;
+                    width: 60%;
+                    height: 40%;
+                    top: 10%;
+                    border-radius: 30px;
+                    background-color: red;
                 }
                 .screen
                 {
@@ -18,15 +33,6 @@
                     top: 3vw;
                     background-color: #DAF7A6;
                 }
-                #outer
-                {
-                    margin: auto auto;
-                    position: relative;
-                    width: 50%;
-                    height: 40%;
-                    border-radius: 30px;
-                    background-color: red;
-                }
                 #output
                 {
                     margin: 10px auto;
@@ -36,34 +42,145 @@
                     text-justify: center;
                     font-size: 2vmin;
                     width: 90%;
+                    top: 20%;
                     height: 90%;
                     font-family: 'Orbitron', sans-serif;
                 }
+                input , select
+                {
+                    /* position: relative;
+                    margin: auto auto; */
+                    text-align: center;
+                    box-align: center;
+                    height: 5vh;
+                }
+                .input
+                {
+                    position: relative;
+                    margin: 1em 1em;
+                    align-content: center;
+                    height: 65%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .field
+                {
+                    position: relative;
+                    display: block;
+                    margin: auto 35%;
+                    height: 20%;
+                    
+                }
         </style>
         <script>
-                
+            function spamMsg()
+            {
+                alert("Please, use me...");
+            }
+
+            setInterval(spamMsg, 30000);
+
+            function subInts(a, b)
+            {
+                return (a - b);
+            }
+            function mulInts(a, b)
+            {
+                return (a * b);
+            }
+            function divInts(a, b)
+            {
+                return (a / b);
+            }
+            function modInts(a, b)
+            {
+                return (a * b);
+            }
+
+            var Calc = {
+                add : function(a, b){ return (a + b);},
+                sub : function(a, b){ return (a - b);},
+                mul : function(a, b){ return (a * b);},
+                div : function(a, b){ return (a / b);},
+                mod : function(a, b){ return (a % b);},
+            };
+
+            function areOkay(a,b)
+            {
+                if (/^[+]?(\d+)$/.test(a) && /^[+]?(\d+)$/.test(b))
+                    return true;
+                else
+                    return false;
+            }
+
+            function tryme()
+            {
+                var a = document.getElementById("num1").value;
+                var b = document.getElementById("num2").value;
+                var op = document.getElementById("operator").value;
+                var result = document.getElementById("output");
+                if (areOkay(a, b))
+                {
+                    a = parseInt(a), b = parseInt(b);
+                    if (op == "+")
+                        result.innerHTML = Calc.add(a, b);
+                    else if (op == "-")
+                        result.innerHTML = Calc.sub(a,b);
+                    else if (op == "*")
+                        result.innerHTML = Calc.mul(a,b);
+                    else
+                    {
+                        if (op == "/" && (b !== 0))
+                            result.innerHTML = Calc.div(a,b);
+                        else if (op == "%" && (b !== 0))
+                            result.innerHTML = Calc.mod(a,b);
+                        else
+                        {
+                            result.innerHTML = "It’s over 9000!";
+                        }
+                    }
+                    console.log(result.innerHTML);
+                    alert(result.innerHTML);
+                }
+                else
+                {
+                    result.innerHTML = "Error :(";
+                    alert("Error :(");
+                }
+            }
         </script>
     </head>
     <body>
-        <div class="main">
-            <div id="outer">
-                <div class="screen">
-                    <div id="output">
-                        Huy kakoy-to
-                    </div>
+       <div id="outer">
+            <div class="screen">
+                <div id="output">
+                    Yes I do Count Numbers
                 </div>
-                <div class="input" id="this">
-
-                </div>
-                <br/>
-                <div class="input" id="operation">
-
+            </div>
+            <br/>
+            <div class="input">
+                <div class="field" id="this">
+                    <input type="text" id="num1" value="" placeholder="Insert First Value" >
                 </div>
                 <br/>
-                <div class="input" id="that">
-
+                <div class="field">
+                    <select id="operator">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                        <option>%</option>
+                    </select>
                 </div>
-                <div class
+                <br/>
+                <div class="field" id="that">
+                    <input type="text" id="num2" value="" placeholder="Insert Second Value" >
+                </div>
+                <br/>
+                <div class="field">
+                    <input class="input" type="submit" name="submit" value="Try me!" onclick="tryme();">
+                </div>
             </div>
         </div>
     </body>
